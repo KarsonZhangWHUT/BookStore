@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<named-config name="webDataSource">
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/bookstore?serverTimezone=Asia/Shanghai
+		</property>
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">123456</property>
+
+		<!-- 最小连接数 -->
+		<property name="minPoolSize">5</property>
+		<property name="maxPoolSize">30</property>
+		<property name="initialPoolSize">10</property>
+		<property name="acquireIncrement">5</property>
+		<property name="maxStatements">15</property>
+	</named-config>
+</c3p0-config>
